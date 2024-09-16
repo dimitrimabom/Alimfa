@@ -1,7 +1,8 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Herotop from "@/components/Herotop";
-import Image from "next/image";
+import Products from "@/components/Products";
+
 
 export default function Home() {
   return (
@@ -13,21 +14,7 @@ export default function Home() {
       <Herotop/>
 
       {/* Produits */}
-      <section id="produits" className="py-16 px-8">
-        <h2 className="text-3xl font-bold text-center mb-8">Nos Produits</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Example Product */}
-          <div className="border rounded-lg overflow-hidden shadow-lg">
-            <Image src="/path-to-product1.jpg" alt="Produit 1" width={400} height={400} />
-            <div className="p-4">
-              <h3 className="text-xl font-semibold mb-2">Crème Hydratante</h3>
-              <p className="text-gray-600 mb-4">Prix : 25€</p>
-              <a href="#" className="text-green-700 hover:underline">Voir plus</a>
-            </div>
-          </div>
-          {/* Repeat for other products */}
-        </div>
-      </section>
+      <Products/>
 
       {/* À propos */}
       <section className="bg-gray-50 py-16 px-8">
